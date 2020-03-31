@@ -1,8 +1,7 @@
-
  body{
   background: linear-gradient(135deg ,#50a3a2,#78cc6d);
-  font-family: sans-serif;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
  }
 
 .container{
@@ -19,6 +18,52 @@
   background-color: #fff;
   margin-right: 10px;
   border-radius: 5px;
+}
+
+.menu ul{
+ margin: 0;
+ padding-left: 0;
+ display: flex;
+ height: 100%;
+ flex-direction: column;
+ justify-content: space-around;
+}
+
+.menu ul li{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(to left, rgba(0, 0, 0, .13),transparent);
+  border-image-slice: 1;
+  padding: 15px;
+}
+
+.menu ul li:last-child{
+  border: none;
+}
+
+.menu ul li a{
+  color: #3b3b3b;
+}
+
+.menu ul li a span{
+  display: block;
+  margin-top: 10px;
+  font-size: 11px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu ul li i{
+  font-size: 18px;  
+}
+
+.menu ul li.active a{
+  color:#78cc6d;
+}
+
+.menu ul li a:hover{
+  color: #78cc6d;
 }
 
 .contact{
