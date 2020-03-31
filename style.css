@@ -1,0 +1,40 @@
+
+ body{
+  background: linear-gradient(135deg ,#50a3a2,#78cc6d);
+  font-family: sans-serif;
+  margin: 0;
+ }
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu{
+  width: 90px;
+  height: 380px;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.contact{
+  height: 520px;
+  width: 400px;
+  background-color: #fff;
+  box-shadow:5px 5px 10px rgba(0,0,0,.05);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.auxiliar-about{
+  height: 500px;
+  width: 650px;
+  background-color: #fff;
+  border-radius: 0px 5px 5px 0px;
+}
+
+
