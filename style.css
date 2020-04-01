@@ -1,7 +1,7 @@
  body{
   background: linear-gradient(135deg ,#50a3a2,#78cc6d);
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
  }
 
 .container{
@@ -67,12 +67,90 @@
 }
 
 .contact{
-  height: 520px;
-  width: 400px;
+  height: 525px;
+  width: 460px;
   background-color: #fff;
   box-shadow:5px 5px 10px rgba(0,0,0,.05);
   z-index: 1;
   border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contac-Photo{
+ height:345px ;
+ background-image: url("img/PERFIL.jpg");
+ background-repeat: no-repeat;
+ background-size:100%;
+ z-index: 1;
+ position: relative;
+}
+
+.style-corner{
+  border: 230px solid #fff;
+  border-bottom: 0;
+  border-top: 35px solid transparent;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  z-index: 1;
+}
+
+.contct-title h1{
+   font-size: 13;
+   height: 40px;
+   padding: 5px;
+   margin: 0;
+}
+
+.contact-subtitle {
+  height: 20px;
+}
+
+.contact-subtitle span{
+  font-size: 18px;
+  color: #42aa34;
+}
+
+.contact-social{
+  height:43px;
+  padding-top: 10px;
+}
+
+.contact-social a{
+  color:#3b3b3b;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.contact-social a:hover{
+  color: #82c27a;
+}
+
+.contact-descarga{
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid;
+  border-image-source: linear-gradient(to left, transparent, rgba(0, 0, 0, .15),transparent);
+  border-image-slice:1;
+}
+
+.contact-descarga a{
+  text-decoration: none;
+  color: #3b3b3b;
+  font-weight:600;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.contact-descarga a:first-child{
+  border-right: 2px solid;
+  border-image-source: linear-gradient( to bottom, rgba(0, 0, 0, .15),transparent);
+  border-image-slice:1;
+  padding-right:80px;
 }
 
 .auxiliar-about{
@@ -81,5 +159,3 @@
   background-color: #fff;
   border-radius: 0px 5px 5px 0px;
 }
-
-
