@@ -44,7 +44,7 @@
 }
 
 .menu ul li a{
-  color: #3b3b3b;
+  color: #646464;
 }
 
 .menu ul li a span{
@@ -67,7 +67,7 @@
 }
 
 .contact{
-  height: 525px;
+  height: 540px;
   width: 460px;
   background-color: #fff;
   box-shadow:5px 5px 10px rgba(0,0,0,.05);
@@ -76,6 +76,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .contac-Photo{
@@ -101,7 +102,7 @@
 .contct-title h1{
    font-size: 13;
    height: 40px;
-   padding: 5px;
+   padding: 10px;
    margin: 0;
 }
 
@@ -116,12 +117,12 @@
 
 .contact-social{
   height:43px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .contact-social a{
   color:#3b3b3b;
-  padding: 8px;
+  padding: 7px;
   margin-top: 10px;
 }
 
@@ -140,7 +141,7 @@
 
 .contact-descarga a{
   text-decoration: none;
-  color: #3b3b3b;
+  color:  #646464;
   font-weight:600;
   font-size: 14px;
   padding-top: 15px;
@@ -154,8 +155,91 @@
 }
 
 .auxiliar-about{
-  height: 500px;
+  height: 510px;
   width: 650px;
   background-color: #fff;
   border-radius: 0px 5px 5px 0px;
+  overflow-x: auto;
 }
+
+.title-auxiliar-about{
+  height:50px;
+}
+
+.auxiliar-about .title-auxiliar-about h2{
+  margin: 20px;
+  font-weight: bolder;
+  color: #000;
+}
+
+.color{
+  color: #42aa34;
+}
+
+.container-about-padre{
+  display: flex;
+}
+
+.container-about-padre > div{
+  width: 50%;
+  padding-top: 10px;
+  padding: 22px;
+}
+.axuliar-lista{
+ list-style-type: none;
+ display: flex;
+ justify-content: space-evenly;
+ flex-direction: column;
+ padding: 0;
+}
+
+.axuliar-lista li{
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid;
+  border-image-source: linear-gradient( to right, transparent, rgba(0, 0, 0, .15),transparent);
+  border-image-slice:1;
+  padding-top: 12px;
+}
+.axuliar-lista li:first-child{
+  border-top: none;
+}
+
+.axuliar-lista li span{
+  padding: 1px 4px;
+}
+
+.subrayado-auxiliar{
+  background-color: #78cc6d;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.subrayado-color{
+  color: #646464;
+  margin-right: 20px;
+}
+
+.auxiliar-rithg{
+  width: 50%;
+  border-left: 1px solid;
+  border-image-source: linear-gradient( to bottom, rgba(0, 0, 0, .15),transparent);
+  border-image-slice:1;
+}
+
+p{
+ color: #646464;
+ line-height: 2em;
+}
+
+.title-auxiliar-about{
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient( to right, rgba(0, 0, 0, .15),transparent);
+  border-image-slice:1;
+}
+
+
+
