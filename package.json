@@ -4,7 +4,7 @@
   "description": "Portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "static-html-server -p 3000 -r ./ index.html"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/yailenfe/diseno-fotante#readme",
   "dependencies": {
-    "static-html-server": "^0.1.2"
+    "express": "^4.17.1"
   }
 }
