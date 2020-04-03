@@ -63,7 +63,7 @@ body {
   height: 580px;
   width: 450px;
   background-color: #fff;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -10px -10px 0px rgba(32, 115, 240, 0.2);
   z-index: 1;
   border-radius: 5px;
   text-align: center;
