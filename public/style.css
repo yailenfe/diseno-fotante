@@ -44,6 +44,7 @@ body {
 }
 .menu ul li a {
   color: #646464;
+  transition: all 0.2s linear;
 }
 .menu ul li a:hover {
   color: #2073f0;
@@ -59,8 +60,8 @@ body {
 }
 
 .contact {
-  height: 540px;
-  width: 460px;
+  height: 580px;
+  width: 450px;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
   z-index: 1;
@@ -71,7 +72,7 @@ body {
   overflow: hidden;
 }
 .contact .contac-Photo {
-  height: 345px;
+  height: 400px;
   background-image: url("./img/PERFIL.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -109,6 +110,7 @@ body {
   color: #3b3b3b;
   padding: 7px;
   margin-top: 10px;
+  transition: all 0.3s linear;
 }
 .contact .contact-social a:hover {
   color: #2073f0;
@@ -136,8 +138,8 @@ body {
 }
 
 .auxiliar-about {
-  height: 510px;
-  width: 650px;
+  height: 550px;
+  width: 600px;
   background-color: #fff;
   border-radius: 0px 5px 5px 0px;
   overflow-x: auto;
@@ -249,6 +251,104 @@ body {
 }
 .auxiliar-about .container-about-padre-server > .server-column > div p {
   color: #646464;
+}
+.auxiliar-about .auxiliar-container-pricing-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: #646464;
+}
+.auxiliar-about .auxiliar-container-pricing-container > div {
+  border-right: 1px solid;
+  border-image-source: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), transparent);
+  border-image-slice: 1;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha {
+  width: 50%;
+  padding: 15px;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario .clorize {
+  padding: 8px;
+  width: 60px;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario .clorize i {
+  font-size: 25px;
+  color: #2073f0;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario .princing-subtitle {
+  color: #646464;
+  font-size: 18px;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario h3 {
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario h3 .arriba {
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: super;
+  color: #646464;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario h3 .abajo {
+  font-size: 16px;
+  font-weight: lighter;
+  color: #646464;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-lista ul {
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.13), transparent);
+  border-image-slice: 1;
+  text-align: center;
+  padding: 0;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-lista ul li {
+  list-style-type: none;
+  padding-bottom: 5px;
+  height: 30px;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-lista ul li span.list-subrayado {
+  text-decoration: line-through;
+  color: #b1b1b1;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-lista ul li span.new {
+  background-color: #f0f0f0;
+  color: #d2d2d2;
+  border-radius: 5px 5px;
+  font-size: 12px;
+  padding: 4px;
+  margin-left: 8px;
+  text-decoration: none;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-lista ul li span.new2 {
+  background-color: #e4e4e4;
+  color: #646464;
+  border-radius: 5px 5px;
+  font-size: 12px;
+  padding: 4px;
+  margin-left: 8px;
+  text-decoration: none;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-priing-icono a {
+  text-decoration: none;
+  padding: 5px;
+  color: #3e3e3e;
+  font-weight: bolder;
+  font-size: 15px;
+  transition: all 0.3s linear;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-priing-icono a:hover {
+  color: #2073f0;
+}
+.auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-priing-icono a i {
+  padding: 5px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
