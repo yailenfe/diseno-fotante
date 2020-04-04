@@ -16,6 +16,7 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 .menu {
@@ -174,12 +175,12 @@ body {
     border-bottom: 20px solid #fff;
     box-sizing: border-box;
 
-
     .title-auxiliar {
         height: 50px;
         border-bottom: 1px solid;
         border-image-source: linear-gradient(to right, rgba(0, 0, 0, 0.15), transparent);
         border-image-slice: 1;
+        margin-top: 20px;
 
         h2 {
             margin: 20px;
@@ -422,8 +423,6 @@ body {
     }
 
     .container-auxiliar-abaut-quote {
-    
-
         .auxilar-quote {
             display: flex;
             flex-direction: column;
@@ -476,7 +475,6 @@ body {
             }
 
             .quote-name {
-
                 span {
                     font-size: 20px;
                     color: darken($secundary-color, 20%);
@@ -485,6 +483,7 @@ body {
 
             .quote-subtitle {
                 padding: 0;
+                margin-bottom: 30px;
 
                 span {
                     color: $secundary-color;
@@ -495,8 +494,6 @@ body {
     }
 
     .container-auxiliar-abaut-custom-text {
-       
-
         .texto-custom {
             padding: 10px;
 
@@ -542,7 +539,7 @@ body {
         animation: cloud 2s ease-in-out infinite;
     }
 
-    .cloud2{
+    .cloud2 {
         position: absolute;
         right: 0;
         top: 40vh;
@@ -553,10 +550,7 @@ body {
         background-repeat: no-repeat;
         animation: cloud 2s ease-in-out infinite;
         animation-delay: -0.5s;
-
     }
-
-    
 }
 
 @keyframes cloud {
@@ -570,5 +564,39 @@ body {
 
     100% {
         transform: translate(0, 20px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 60px;
+        border-radius: 0;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                border-right: 1px solid;
+                border-image-source: linear-gradient(to top transparent, rgba(0, 0, 0, 0.13), transparent);
+                border-image-slice: 1;
+                border-bottom: none;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .auxiliar-about {
+        display: none;
     }
 }

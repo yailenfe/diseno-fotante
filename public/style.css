@@ -11,6 +11,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .menu {
@@ -152,6 +153,7 @@ body {
   border-bottom: 1px solid;
   border-image-source: linear-gradient(to right, rgba(0, 0, 0, 0.15), transparent);
   border-image-slice: 1;
+  margin-top: 20px;
 }
 .auxiliar-about .title-auxiliar h2 {
   margin: 20px;
@@ -405,6 +407,7 @@ body {
 }
 .auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-subtitle {
   padding: 0;
+  margin-bottom: 30px;
 }
 .auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-subtitle span {
   color: #646464;
@@ -472,6 +475,37 @@ body {
   }
   100% {
     transform: translate(0, 20px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    border-radius: 0;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu ul li {
+    border-right: 1px solid;
+    border-image-source: linear-gradient(to top transparent, rgba(0, 0, 0, 0.13), transparent);
+    border-image-slice: 1;
+    border-bottom: none;
+    padding-right: 15px;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .auxiliar-about {
+    display: none;
   }
 }
 
