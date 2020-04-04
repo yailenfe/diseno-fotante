@@ -1,5 +1,6 @@
-// $primary-color: rgb(216, 11, 154); // Pink
-$primary-color: rgb(32, 115, 240);
+// $primary-color: rgb(216, 11, 154);
+$background-color: rgb(7, 185, 255);
+$primary-color: darken($background-color, 15%);
 $secundary-color: #646464;
 
 body {
@@ -18,7 +19,7 @@ body {
 }
 
 .menu {
-    width: 90px;
+    width: 75px;
     height: 380px;
     background-color: #fff;
     margin-right: 10px;
@@ -39,7 +40,6 @@ body {
             border-bottom: 1px solid;
             border-image-source: linear-gradient(to left, rgba(0, 0, 0, 0.13), transparent);
             border-image-slice: 1;
-            padding: 15px;
 
             &:last-child {
                 border: none;
@@ -53,7 +53,7 @@ body {
 
             a {
                 color: $secundary-color;
-                 transition: all .2s linear;
+                transition: all 0.2s linear;
 
                 &:hover {
                     color: $primary-color;
@@ -79,7 +79,7 @@ body {
     height: 580px;
     width: 450px;
     background-color: #fff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05),-10px -10px 0px rgba($primary-color,0.2) ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -10px -10px 0px rgba($primary-color, 0.2);
     z-index: 1;
     border-radius: 5px;
     text-align: center;
@@ -88,7 +88,7 @@ body {
     overflow: hidden;
 
     .contac-Photo {
-        height: 400px;
+        height: 385px;
         background-image: url("./img/PERFIL.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -131,7 +131,7 @@ body {
             color: #3b3b3b;
             padding: 7px;
             margin-top: 10px;
-            transition: all .3s linear;
+            transition: all 0.3s linear;
 
             &:hover {
                 color: $primary-color;
@@ -170,6 +170,10 @@ body {
     background-color: #fff;
     border-radius: 0px 5px 5px 0px;
     overflow-x: auto;
+    border-top: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    box-sizing: border-box;
+
 
     .title-auxiliar {
         height: 50px;
@@ -306,7 +310,7 @@ body {
         text-align: center;
         color: $secundary-color;
 
-        & > div{
+        & > div {
             border-right: 1px solid;
             border-image-source: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), transparent);
             border-image-slice: 1;
@@ -324,7 +328,6 @@ body {
                 .clorize {
                     padding: 8px;
                     width: 60px;
-                    
 
                     i {
                         font-size: 25px;
@@ -348,7 +351,6 @@ body {
                         font-weight: bold;
                         vertical-align: super;
                         color: $secundary-color;
-                    
                     }
 
                     .abajo {
@@ -359,35 +361,34 @@ body {
                 }
             }
 
-            .auxiliar-pricing-lista{
-
-                ul{
+            .auxiliar-pricing-lista {
+                ul {
                     border-bottom: 1px solid;
                     border-image-source: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.13), transparent);
                     border-image-slice: 1;
                     text-align: center;
                     padding: 0;
-                
-                    li{
-                        list-style-type:none ;
+
+                    li {
+                        list-style-type: none;
                         padding-bottom: 5px;
                         height: 30px;
 
-                       span.list-subrayado{
-                           text-decoration: line-through;
-                           color:lighten($secundary-color,30%);
+                        span.list-subrayado {
+                            text-decoration: line-through;
+                            color: lighten($secundary-color, 30%);
                         }
-                        span.new{
-                            background-color: lighten($secundary-color,55%);
-                            color:lighten($secundary-color,43%) ;
+                        span.new {
+                            background-color: lighten($secundary-color, 55%);
+                            color: lighten($secundary-color, 43%);
                             border-radius: 5px 5px;
                             font-size: 12px;
                             padding: 4px;
                             margin-left: 8px;
                             text-decoration: none;
                         }
-                        span.new2{
-                            background-color: lighten($secundary-color,50%);
+                        span.new2 {
+                            background-color: lighten($secundary-color, 50%);
                             color: $secundary-color;
                             border-radius: 5px 5px;
                             font-size: 12px;
@@ -398,30 +399,176 @@ body {
                     }
                 }
             }
-            .auxiliar-priing-icono{
-               
-                a{
+            .auxiliar-priing-icono {
+                a {
                     text-decoration: none;
                     padding: 5px;
-                    color:darken($secundary-color, 15%);
+                    color: darken($secundary-color, 15%);
                     font-weight: bolder;
                     font-size: 15px;
-                    transition: all .3s linear;
+                    transition: all 0.3s linear;
 
-
-                    &:hover{
+                    &:hover {
                         color: $primary-color;
                     }
 
-                    i{
+                    i {
                         padding: 5px;
                         font-size: 15px;
                     }
-                  
                 }
-
             }
         }
-        
+    }
+
+    .container-auxiliar-abaut-quote {
+    
+
+        .auxilar-quote {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            .quote-texto {
+                color: $secundary-color;
+                font-size: 18px;
+                text-align: center;
+                padding-bottom: 25px;
+
+                p {
+                    font-style: italic;
+                    text-align: center;
+                    padding: 10px 25px;
+                    position: relative;
+                    margin: 25px 25px;
+
+                    &::before {
+                        font-family: fontawesome;
+                        content: "\f10d";
+                        font-size: 13px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &::after {
+                        font-family: fontawesome;
+                        content: "\f10e";
+                        font-size: 13px;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .quote-imagen {
+                height: 50px;
+                width: 50px;
+                background-color: red;
+                background-image: url("img/PERFIL.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+
+            .quote-name {
+
+                span {
+                    font-size: 20px;
+                    color: darken($secundary-color, 20%);
+                }
+            }
+
+            .quote-subtitle {
+                padding: 0;
+
+                span {
+                    color: $secundary-color;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+
+    .container-auxiliar-abaut-custom-text {
+       
+
+        .texto-custom {
+            padding: 10px;
+
+            p {
+                color: $secundary-color;
+                padding: 20px;
+            }
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $primary-color;
+        -webkit-box-shadow: inset 0 0 1px rgba(39, 39, 39, 0.5);
+    }
+}
+
+.animation-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    overflow: hidden;
+
+    .cloud1 {
+        position: absolute;
+        top: 5vh;
+        left: 0;
+        width: 400px;
+        height: 200px;
+        background-image: url("img/clouds/c1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: cloud 2s ease-in-out infinite;
+    }
+
+    .cloud2{
+        position: absolute;
+        right: 0;
+        top: 40vh;
+        width: 500px;
+        height: 400px;
+        background-image: url("img/clouds/c4.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: cloud 2s ease-in-out infinite;
+        animation-delay: -0.5s;
+
+    }
+
+    
+}
+
+@keyframes cloud {
+    0% {
+        transform: translate(0, 20px);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 20px);
     }
 }

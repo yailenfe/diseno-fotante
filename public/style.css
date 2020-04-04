@@ -1,5 +1,6 @@
+@charset "UTF-8";
 body {
-  background: linear-gradient(135deg, #97bef8, #2073f0);
+  background: linear-gradient(135deg, #3ac7ff, #0085ba);
   margin: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -13,7 +14,7 @@ body {
 }
 
 .menu {
-  width: 90px;
+  width: 75px;
   height: 380px;
   background-color: #fff;
   margin-right: 10px;
@@ -34,20 +35,19 @@ body {
   border-bottom: 1px solid;
   border-image-source: linear-gradient(to left, rgba(0, 0, 0, 0.13), transparent);
   border-image-slice: 1;
-  padding: 15px;
 }
 .menu ul li:last-child {
   border: none;
 }
 .menu ul li.active a {
-  color: #2073f0;
+  color: #0085ba;
 }
 .menu ul li a {
   color: #646464;
   transition: all 0.2s linear;
 }
 .menu ul li a:hover {
-  color: #2073f0;
+  color: #0085ba;
 }
 .menu ul li a span {
   display: block;
@@ -63,7 +63,7 @@ body {
   height: 580px;
   width: 450px;
   background-color: #fff;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -10px -10px 0px rgba(32, 115, 240, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -10px -10px 0px rgba(0, 133, 186, 0.2);
   z-index: 1;
   border-radius: 5px;
   text-align: center;
@@ -72,7 +72,7 @@ body {
   overflow: hidden;
 }
 .contact .contac-Photo {
-  height: 400px;
+  height: 385px;
   background-image: url("./img/PERFIL.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -100,7 +100,7 @@ body {
 }
 .contact .contact-subtitle span {
   font-size: 18px;
-  color: #2073f0;
+  color: #0085ba;
 }
 .contact .contact-social {
   height: 43px;
@@ -113,7 +113,7 @@ body {
   transition: all 0.3s linear;
 }
 .contact .contact-social a:hover {
-  color: #2073f0;
+  color: #0085ba;
 }
 .contact .contact-descarga {
   height: 40px;
@@ -143,6 +143,9 @@ body {
   background-color: #fff;
   border-radius: 0px 5px 5px 0px;
   overflow-x: auto;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid #fff;
+  box-sizing: border-box;
 }
 .auxiliar-about .title-auxiliar {
   height: 50px;
@@ -156,7 +159,7 @@ body {
   color: #000;
 }
 .auxiliar-about .title-auxiliar h2 .color {
-  color: #2073f0;
+  color: #0085ba;
 }
 .auxiliar-about .container-about-padre {
   display: flex;
@@ -199,7 +202,7 @@ body {
   padding: 1px 4px;
 }
 .auxiliar-about .container-about-padre .auxiliar-rithg .axuliar-lista li .subrayado-auxiliar {
-  background-color: #2073f0;
+  background-color: #0085ba;
   border-radius: 2px;
   color: #fff;
   font-size: 14px;
@@ -239,7 +242,7 @@ body {
 }
 .auxiliar-about .container-about-padre-server > .server-column > div span i {
   font-size: 25px;
-  background-color: #2073f0;
+  background-color: #0085ba;
   padding-top: 15px;
   border-radius: 50%;
   height: 45px;
@@ -278,7 +281,7 @@ body {
 }
 .auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario .clorize i {
   font-size: 25px;
-  color: #2073f0;
+  color: #0085ba;
 }
 .auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-pricing-horario .princing-subtitle {
   color: #646464;
@@ -344,11 +347,132 @@ body {
   transition: all 0.3s linear;
 }
 .auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-priing-icono a:hover {
-  color: #2073f0;
+  color: #0085ba;
 }
 .auxiliar-about .auxiliar-container-pricing-container .auxilar-pricing-derecha .auxiliar-priing-icono a i {
   padding: 5px;
   font-size: 15px;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-texto {
+  color: #646464;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-texto p {
+  font-style: italic;
+  text-align: center;
+  padding: 10px 25px;
+  position: relative;
+  margin: 25px 25px;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-texto p::before {
+  font-family: fontawesome;
+  content: "";
+  font-size: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-texto p::after {
+  font-family: fontawesome;
+  content: "";
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-imagen {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  background-image: url("img/PERFIL.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-name span {
+  font-size: 20px;
+  color: #313131;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-subtitle {
+  padding: 0;
+}
+.auxiliar-about .container-auxiliar-abaut-quote .auxilar-quote .quote-subtitle span {
+  color: #646464;
+  padding-top: 0;
+}
+.auxiliar-about .container-auxiliar-abaut-custom-text .texto-custom {
+  padding: 10px;
+}
+.auxiliar-about .container-auxiliar-abaut-custom-text .texto-custom p {
+  color: #646464;
+  padding: 20px;
+}
+.auxiliar-about::-webkit-scrollbar {
+  width: 12px;
+}
+.auxiliar-about::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.auxiliar-about::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0085ba;
+  -webkit-box-shadow: inset 0 0 1px rgba(39, 39, 39, 0.5);
+}
+
+.animation-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  overflow: hidden;
+}
+.animation-container .cloud1 {
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  width: 400px;
+  height: 200px;
+  background-image: url("img/clouds/c1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: cloud 2s ease-in-out infinite;
+}
+.animation-container .cloud2 {
+  position: absolute;
+  right: 0;
+  top: 40vh;
+  width: 500px;
+  height: 400px;
+  background-image: url("img/clouds/c4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: cloud 2s ease-in-out infinite;
+  animation-delay: -0.5s;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
